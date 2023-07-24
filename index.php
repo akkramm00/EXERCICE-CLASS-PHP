@@ -21,11 +21,11 @@ class Personne {
   public function getPrenom() {
   return $this-> prenom ;
   }
-  public function setAge() {
-    $this -> age =$age ;
+  public function setAge(int $age) {
+    $this->age = $age ;
   }
-  public function setPrenom() {
-    $this -> prenom = $prenom ;
+  public function setPrenom(string $prenom) {
+    $this->prenom = $prenom ;
   }
 
   public function __construct (string $prenom, int $age) {
@@ -51,8 +51,10 @@ class Femme extends Personne implements PresentationInterface{
     echo("Je suis une Femme age de ".$this->getAge()." et je m'appelle ".$this->getPrenom());
   }
 }
-
-
+$monsieur = new Homme("john","28");
+$monsieur->sePresenter();
+$femme = new Femme("Marie","27");
+$femme->sePresenter();
 ?> 
 
 

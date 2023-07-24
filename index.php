@@ -4,10 +4,10 @@
   </head>
   <body>
     <?php
-// Dans cet exercice pratique, nous allons définir deux classes, Un eclasse Homme et une classe femme.
+// Dans cet exercice pratique, nous allons définir deux classes, Une classe Homme et une classe femme.
 // Ces deux classes vont hériter de la classe Personne. Ces classes devront posséder les attributs Prenom et Age.
-// De plus , ces deux classes devront implémenter la methode "sePresenter" qui donnera cves résultats :
-// Je suis un Homme de $age anset je m'appele $prenom.
+// De plus , ces deux classes devront implémenter la methode "sePresenter" qui donnera ces résultats :
+// Je suis un Homme de $age ans et je m'appele $prenom.
 // Je suis une femme age de $age et je m'appelle $prenom.
 
 // QUESTION : Dans un premier temps , on vba définir la class Personne.
@@ -33,6 +33,7 @@ class Personne {
     $this -> setPrenom($prenom) ;
       }
 }
+// Définissons les classes HOmme et Femme , en suivant les consignes précédentes.modifionns l'age, le prénom et utilisons la méthode Sepresenter. on doit utiliser les concepts d'héritage et d'interface.
 ?> 
 
 

@@ -33,7 +33,26 @@ class Personne {
     $this -> setPrenom($prenom) ;
       }
 }
-// Définissons les classes HOmme et Femme , en suivant les consignes précédentes.modifionns l'age, le prénom et utilisons la méthode Sepresenter. on doit utiliser les concepts d'héritage et d'interface.
+// Définissons les classes Homme et Femme , en suivant les consignes précédentes.modifionns l'age, le prénom et utilisons la méthode Sepresenter. on doit utiliser les concepts d'héritage et d'interface.
+interface PresentationInterface {
+  public function sePresenter();
+}
+
+class Homme extends Personne implements PresentationInterface{
+
+  public function sePresenter(){
+    echo (" Je suis un Homme de ".$this->getAge()." ans et je m'appelle ".$this->getPrenom());
+  }
+}
+
+class Femme extends Personne implements PresentationInterface{
+
+  public function sePresenter() {
+    echo("Je suis une Femme age de ".$this->getAge()." et je m'appelle ".$this->getPrenom());
+  }
+}
+
+
 ?> 
 
 
